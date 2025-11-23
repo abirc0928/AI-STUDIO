@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { DownloadContext, ImageContext, RouteContext } from "../context";
 import ConfirmModal from "./ConfirmModal";
-import DownloadSVG from "../svg/downloadSVG.jsx"; 
+import DownloadSVG from "../svg/downloadSVG.jsx";
 
 const ImageActions = ({ image }) => {
   const { downloadedImages, setDownloadedImages } = useContext(DownloadContext);
@@ -11,8 +11,7 @@ const ImageActions = ({ image }) => {
   const [showConfirm, setShowConfirm] = useState(false);
 
   const handleDownloadImage = () => {
-    const exists = downloadedImages.includes(image);
-    if (!exists) {
+    if (!downloadedImages.includes(image)) {
       setDownloadedImages(prev => [...prev, image]);
     }
   };
@@ -29,15 +28,12 @@ const ImageActions = ({ image }) => {
   return (
     <div>
       <div className="absolute bottom-2 right-2 p-1 flex items-center gap-3">
-        {/* Delete Button */}
         <img
           src="./assets/delete.svg"
           className="h-8 cursor-pointer"
           alt="delete"
           onClick={() => setShowConfirm(true)}
         />
-
-        {/* Download Button */}
         <div onClick={handleDownloadImage}>
           <a href={image} download>
             <DownloadSVG />
@@ -45,7 +41,6 @@ const ImageActions = ({ image }) => {
         </div>
       </div>
 
-      {/* Confirm Modal */}
       <ConfirmModal
         open={showConfirm}
         onClose={() => setShowConfirm(false)}
