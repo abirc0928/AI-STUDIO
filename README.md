@@ -1,17 +1,33 @@
-# React + Vite
+# Pollinations.AI Image Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React project to generate images using the **[Pollinations.AI API](https://github.com/pollinations/pollinations/blob/master/APIDOCS.md#text-to-image-get-%EF%B8%8F)**. Users can generate, download, and delete images. The project uses **custom hooks** and **context API** for state management, **Tailwind CSS** for styling, and simple routing with **useState**. API calls are handled with **Fetch**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Generate images via **Pollinations.AI API**
+- Download generated images
+- Delete images from the gallery
+- Custom hooks and context for state management
+- Responsive UI with **Tailwind CSS**
+- Routing managed with **useState**
+- API calls handled using **Fetch**
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Tailwind CSS
+- JavaScript (ES6)
+- Pollinations.AI API  
+  [Pollinations API Documentation](https://github.com/pollinations/pollinations/blob/master/APIDOCS.md#text-to-image-get-%EF%B8%8F)
+- Fetch API
+- React Context API
+- Custom React Hooks
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# AI-STUDIO" 
+### Prerequisites
+
+- Node.js >= 18.x
+- npm
+
+
