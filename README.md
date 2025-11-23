@@ -2,6 +2,10 @@
 
 A React project to generate images using the **[Pollinations.AI API](https://github.com/pollinations/pollinations/blob/master/APIDOCS.md#text-to-image-get-%EF%B8%8F)**. Users can generate, download, and delete images. The project uses **custom hooks** and **context API** for state management, **Tailwind CSS** for styling, and simple routing with **useState**. API calls are handled with **Fetch**.
 
+## Live Demo
+
+Check out the live demo [here](https://cheery-baklava-4ab972.netlify.app/).
+
 ## Features
 
 - Generate images via **Pollinations.AI API**
@@ -29,5 +33,6 @@ A React project to generate images using the **[Pollinations.AI API](https://git
 
 - Node.js >= 18.x
 - npm
+
 
 
