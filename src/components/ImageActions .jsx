@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { DownloadContext, ImageContext, RouteContext } from "../context";
 import ConfirmModal from "./ConfirmModal";
-import DownloadSVG from "../svg/downloadSVG";
+import DownloadSVG from "../svg/downloadSVG.jsx"; 
 
 const ImageActions = ({ image }) => {
   const { downloadedImages, setDownloadedImages } = useContext(DownloadContext);
