@@ -4,7 +4,7 @@ A React project to generate images using the **[Pollinations.AI API](https://git
 
 ## Live Demo
 
-Check out the live demo [here]([https://img-generator-ai-studio.netlify.app/]).
+Check out the live demo [here](https://img-generator-ai-studio.netlify.app/).
 
 ## Features
 
